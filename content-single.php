@@ -12,25 +12,7 @@
 
 	<div class="entry-content" itemprop="text">
 		
-		<?php
-		if ( get_the_post_thumbnail() != '' ):
-			$image_small  = wp_get_attachment_image_src( get_post_thumbnail_id(), 'feature_block_narrow' );
-			$image_medium = wp_get_attachment_image_src( get_post_thumbnail_id(), 'feature_block_medium' );
-			$image_large  = wp_get_attachment_image_src( get_post_thumbnail_id(), 'feature_block_wide' );
-		?>
-		
-		<picture>
-			<!--[if IE 9]><video style="display: none;"><![endif]-->
-			<source srcset="<?php echo esc_url( $image_large[0] ); ?>" media="(min-width: 969px)">
-			<source srcset="<?php echo esc_url( $image_medium[0] ); ?>" media="(min-width: 769px)">
-			<source srcset="<?php echo esc_url( $image_small[0] ); ?>"></span>
-			<!--[if IE 9]></video><![endif]-->
-			<img srcset="<?php echo esc_url( $image_small[0] ); ?>">
-		</picture>
-		
-		<?php endif; ?>
-		
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'themeTextDomain' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 

@@ -62,6 +62,11 @@ function themeFunction_setup() {
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
 	
+	// Add custom image sizes for picturefill
+	// add_image_size( 'feature_block_narrow', 750, 750, true );
+	// add_image_size( 'feature_block_medium', 450, 450, true );
+	// add_image_size( 'feature_block_wide', 300, 300, true );
+	
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
 		'comment-list',
@@ -69,9 +74,6 @@ function themeFunction_setup() {
 		'comment-form',
 		'gallery',
 	) );
-	
-	// Add custom image sizes
-	// add_image_size( 'name', 500, 300 );
 }
 endif;
 add_action( 'after_setup_theme', 'themeFunction_setup' );
@@ -182,6 +184,15 @@ function themeFunction_scripts() {
 		date("h:i:s"), //version number
 		true // enqueue in footer
 	);
+	
+	// responsive images scripts
+	// wp_enqueue_script(
+	// 	'theme-picturefill', //script name
+	// 	get_template_directory_uri() . '/js/vendor/picturefill.min.js', //script location
+	// 	array('jquery'), //depends on jquery
+	// 	null, //version number
+	// 	true // enqueue in footer
+	// );
 }    
 add_action('wp_enqueue_scripts', 'themeFunction_scripts');
 
