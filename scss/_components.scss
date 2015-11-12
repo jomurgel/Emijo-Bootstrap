@@ -1,0 +1,16 @@
+/* Password Protected Posts */
+.post-password-required {
+	.entry-header .comments-link {
+		margin: 1.5em 0 0;
+	}
+	input[type=password] {
+		margin: 0.8125em 0;
+	}	
+}
+
+
+/* =error404
+----------------------------------------------- */
+.not-found {
+	text-align: center;
+}

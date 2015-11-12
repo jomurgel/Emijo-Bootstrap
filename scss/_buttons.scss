@@ -1,0 +1,6 @@
+// chrome and safari fix
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.btn {
+		padding: 7px 12px 6px;
+	}
+}

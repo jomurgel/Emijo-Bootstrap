@@ -1,0 +1,32 @@
+html,
+body {
+	background: $bg;
+	margin: 0;
+	padding: 0;
+}
+
+	.img-responsive {
+		width: 100% \9;
+	}
+
+header,
+footer,
+main {
+	@include cf();
+	position: relative;
+	
+}
+
+#main {
+	overflow: hidden;
+	#primary {
+		@include padding(50px);
+	}
+}
+
+/* Sticky footer */
+@include sticky-footer( $footerheight, '#page','#main','#footer');
+
+@include breakpoint(m) {
+	@include sticky-footer( $fh-mobile, '#page','#main','#footer');
+}

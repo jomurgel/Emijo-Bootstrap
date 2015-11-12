@@ -1,0 +1,53 @@
+/*!
+Theme Name: themeName
+Theme URI: themeURI
+Author: themeAuthor
+AuthorURI: authorURI
+Description: themeDescription
+Version: 1.2
+License: The MIT License (MIT)
+License URI: http://opensource.org/licenses/MIT
+Text Domain: themeTextDomain
+*/
+
+/* Bootstrap
+-------------------------- */
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* RESET 
+------------------ */
+@import "node_modules/normalize-sass/normalize";
+
+/* BASE
+------------------ */
+@import "variables";
+@import "mixins";
+
+/* =LAYOUTS
+------------------ */
+@import "layout";
+@import "header";
+@import "nav";
+@import "footer";
+
+/* =CONTENT
+------------------ */
+@import "typography";
+@import "buttons";
+
+/* =COMPONENTS
+------------------ */
+/* Includes password protection for pages and posts, 404 page */
+@import "components";
+
+
+/* =PROJECT PAGES SPECIFIC
+------------------ */
+@import "pages/content";
+@import "sidebar";
+@import "pages/all";
+
+/* =BLOG SPECIFIC
+------------------ */
+@import "blog/paging";
+@import "blog/comments";

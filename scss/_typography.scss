@@ -1,0 +1,169 @@
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body, input, textarea {
+	color: $text;
+	font-family: $main;
+	line-height: $lh;
+	font-size: $size;
+	font-weight: $weight;
+}
+
+button, input, select, textarea {
+	@include transition(all, 0.3s, ease-in-out);
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+		// flush alignment
+		margin-top:0;
+		margin-left:0;
+		margin-right:0;
+}
+h1 {
+	&.entry-title {
+		color: $brand-primary;
+	}
+}
+h2 {
+	
+}
+h3 {
+}
+h4 {
+	
+}
+h5 {
+	
+}
+h6 {
+	
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+/* Text elements */
+p {
+	margin-bottom: 1.5em;
+}
+ul, ol {
+	margin: 0 0 1.5em 0;
+	list-style-position: inside;
+	
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+	ol {
+		list-style: upper-alpha;
+		ol {
+			list-style: lower-roman;
+		}
+		ol {
+			list-style: lower-alpha;
+		}
+	}	
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.5em;
+}
+dt {
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+}
+em, i {
+	font-style: italic;
+}
+blockquote {
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 3em $end $end;
+	clear:both;
+	em,
+	i,
+	cite {
+		font-style: normal;
+	}
+}
+cite {
+	color: #666;
+	letter-spacing: 0.05em;
+	padding-left: 60px;
+}
+pre {
+	background: #f4f4f4;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+	overflow: auto;
+	padding: 0.75em 1.5em;
+}
+code, kbd {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym, dfn {
+	border-bottom: $border;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.5em;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+/* Links */
+a {
+	color: $brand-primary;
+	text-decoration: none;	
+	@include transition(all, 0.3s, ease-in-out);
+	&:focus,
+	&:active,
+	&:hover {
+		color: $brand-success;
+	}
+}
+
+
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}

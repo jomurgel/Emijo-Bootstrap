@@ -1,0 +1,39 @@
+/* BASE VARIABLES
+ *******************/
+
+// Sizes for Sticky Footer
+$footerheight:  160px; // on desktop 1440xx900px+
+$fh-mobile:     125px; // on mobile
+
+// Bootstrap Colors 
+$gray-darker:   lighten(#000000, 13.5%); // #222
+$gray-dark:     lighten(#000000, 20%);   // #333
+$gray:          lighten(#000000, 33.5%); // #555
+$gray-light:    #e7e7e7;
+$gray-lighter:  #f8f8f8;
+
+$brand-primary: darken(#428bca, 6.5%); // #337ab7
+$brand-success: #5cb85c;
+$brand-info:    #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger:  #d9534f;
+
+// Global
+$text:          lighten(#000000, 20%); 
+$bg:            #ffffff;
+
+// Borders
+$border:        1px solid $gray-light;
+
+// Fonts
+$main:          sans-serif;
+$lh:            1.42857; // line-height
+$size:          14px; // font-size
+$weight:        300; // font weight
+$end:           1.5em;
+
+// Breakpoints (See Mixins)
+$cap:           1920px; // top measurement width
+$l:             1200px; // bootstrap large
+$m:             992px; // bootstrap medium
+$s:             768px; // bootstrap small

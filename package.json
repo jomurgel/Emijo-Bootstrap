@@ -1,0 +1,20 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jomurgel/Emijo-Bootstrap"
+  },
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-livereload": "*",
+    "gulp-replace": "*",
+    "gulp-prompt" : "*",
+    "gulp-confirm": "*",
+    "bootstrap-sass": "*"
+    "normalize-sass": "*"
+  },
+  "license": "MIT"
+}

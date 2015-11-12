@@ -1,0 +1,58 @@
+#comments {
+	margin-top:50px;
+	
+	@include breakpoint(m) {
+		margin-top:25px;
+	}
+}
+
+ol.commentlist {
+	@include padding(50px);
+	list-style: none;
+	margin: 0;
+	padding-left:0;
+	li {
+		border-top: $border;
+		padding-top: 30px;
+		margin-top: 30px;
+		&:first-child {
+			padding-top:0;
+			margin-top:0;
+			border-top: none;
+		}
+	}
+	ul.children {
+		padding-top:30px;
+		list-style: none;
+		
+		@include breakpoint(m) {
+			padding: 30px 0 0 0;
+			margin: 0;
+		}
+		li {
+			padding:15px;
+			margin: 0;
+			&:nth-child(odd) {
+				background: $gray-light;
+			}
+			&:nth-child(even) {
+				background:$gray-lighter;
+			}
+		}
+	}
+}
+
+textarea#comment {
+	margin-bottom: 15px;
+}
+
+.comment-author {
+	margin: 0 0 1.5em 0;
+	img {
+		margin: 0 5px 0 0;
+	}
+}
+
+#respond {
+	margin-top:15px;
+}

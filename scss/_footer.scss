@@ -1,0 +1,22 @@
+#footer {
+	background: $gray-lighter;
+	z-index: 10;
+	.copyright {
+		background: $bg;
+		font-size: 85%;
+		text-align: right;
+		padding: 10px 15px;
+	}
+	.footer-nav {
+		border-top: $border;
+		@include padding(50px);
+	}
+	.copyright,
+	.footer-nav {
+		border-bottom: $border;
+		
+		@include breakpoint(s) {
+			text-align: center;
+		}
+	}
+}
