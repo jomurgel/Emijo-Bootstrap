@@ -13,7 +13,7 @@
     "gulp-replace": "*",
     "gulp-prompt" : "*",
     "gulp-confirm": "*",
-    "bootstrap-sass": "*"
+    "bootstrap-sass": "*",
     "normalize-sass": "*"
   },
   "license": "MIT"
