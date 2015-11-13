@@ -149,7 +149,6 @@ add_filter( 'tiny_mce_before_init', 'themeFunction_mce_before_init' );
 //         </script> -->
 /* <?php }
 // add_action( 'admin_print_scripts', 'themeFunction_admin_typekit' );
-// }
 
 
 
@@ -170,7 +169,7 @@ add_filter( 'tiny_mce_before_init', 'themeFunction_mce_before_init' );
 //	wp_enqueue_style( 'google-fonts' );
 //}
 
-
+// add_action( 'wp_enqueue_scripts', 'child_load_google_fonts' ); // Add Google Fonts Support
 
 
 // Add Typekit Support
@@ -183,5 +182,6 @@ add_filter( 'tiny_mce_before_init', 'themeFunction_mce_before_init' );
   	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?php }
 */
+//add_action( 'wp_enqueue_scripts', 'themeFunction_typekit' ); // Add Typekit Script Support
 
 ?>
