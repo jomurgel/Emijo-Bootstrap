@@ -24,6 +24,13 @@ main {
 	}
 }
 
+article {
+	margin-top:40px;
+	&:first-child {
+		margin-top:0;
+	}
+}
+
 /* Sticky footer */
 @include sticky-footer( $footerheight, '#page','#main','#footer');
 

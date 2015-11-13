@@ -24,7 +24,7 @@
 			<?php echo get_the_date(); ?>
 		</span>
 
-	<?php } elseif(is_archive() || is_category() || is_tag()) { ?>
+	<?php } elseif(is_archive() || is_category() || is_tag() || is_search()) { ?>
 
 	<h2 class="entry-title" itemprop="headline">
 		<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'themeTextDomain' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
@@ -38,10 +38,6 @@
 	<?php } elseif(is_404()) { ?>
 
 		<h1 class="entry-title"><?php _e( 'Aw, Snap!', 'themeTextDomain' ); ?></h1>
-
-	<?php } elseif(is_search()) { ?>
-
-		<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'themeTextDomain' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 
 	<?php } else { ?>
 

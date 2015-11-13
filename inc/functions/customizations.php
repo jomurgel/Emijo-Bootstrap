@@ -118,9 +118,9 @@ add_filter( 'tiny_mce_before_init', 'themeFunction_mce_before_init' );
 //     global $pagenow;
 //     $arg = array( 'post.php', 'post-new.php', 'page-new.php', 'page.php' );
 //     if ( ! in_array( $pagenow, $arg ))
-//            return; ?>
+/*            return; ?>
 // 
-//      <script type="text/javascript">
+<!--      <script type="text/javascript">
 //          (function () {
 //             var config = {
 //           kitId:'nol0xey',
@@ -146,8 +146,8 @@ add_filter( 'tiny_mce_before_init', 'themeFunction_mce_before_init' );
 //            var s = document.getElementsByTagName("script")[0];
 //            s.parentNode.insertBefore(tk, s)
 //         })();
-//         </script>
-// <?php }
+//         </script> -->
+/* <?php }
 // add_action( 'admin_print_scripts', 'themeFunction_admin_typekit' );
 // }
 

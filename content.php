@@ -38,6 +38,7 @@
 		
 		<?php the_tags( '<div class="post-tags">' . __( 'Tagged: ', 'themeTextDomain' ) , ', ', '</div>' ); ?>
 		
+		<?php if(! is_search()) { ?>
 		<div class="comments-link">
 			<?php comments_popup_link( 
 				 __( 'Leave a comment', 'themeTextDomain' ), 
@@ -45,5 +46,6 @@
 				 __( '% comments', 'themeTextDomain' ) ); 
 			?>
 		</div>
+		<?php } ?>
 	</footer><!-- #entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->
