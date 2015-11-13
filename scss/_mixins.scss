@@ -112,8 +112,8 @@
 
 // E Center Div
 @mixin center($axis: "both"){
-  position:absolute;
   @if $axis == "y"{
+    position:absolute;
     top:50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -122,6 +122,7 @@
     transform: translateY(-50%);
   }
   @if $axis == "x"{
+    position:absolute;
     left:50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -130,6 +131,7 @@
     transform: translateX(-50%);
   }
   @if $axis == "both"{
+    position:absolute;
     top:50%;
     left:50%;
     -webkit-transform: translate(-50%, -50%);
@@ -137,7 +139,17 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }   
+  }  
+  @if $axis == "none"{
+     position: relative;
+     top:auto;
+     left:auto;
+     -webkit-transform: translate(0, 0);
+     -moz-transform: translate(0, 0);
+     -ms-transform: translate(0, 0);
+     -o-transform: translate(0, 0);
+     transform: translate(0, 0);
+   }   
 }
 
 // F Equal Padding
