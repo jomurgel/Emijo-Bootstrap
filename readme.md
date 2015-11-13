@@ -6,11 +6,15 @@ This is a clean WordPress starter theme based on the Emi starter theme.  A solid
 Features
 ------------
 * @media queries via [Breakpoint](http://breakpoint-sass.com/) - Right in your _mixins.scss file. 
-* Host of other [mixins](https://gist.github.com/jomurgel/a457e491a475e71a4ac3) like columns, retina images, rotation and more.
+* Mixins for Fixed Footers, Breakpoints, Several Effects and Retina Images.
 * Simple URL redirect template from [Dave Stewart](http://www.davestewart.co.uk) - tweaked for use with local and external URLs.
 * Added [Schema](http://www.schema.org) support.
-* Added Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-* Icon, Google Fonts and Typekit enqueue support.
+* Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
+* Icon, Google Fonts and Typekit enqueue support (including Typekit in TinyMCE).
+* TinyMCE Functionality
+* FontAwesome baked in.
+* Favicons.
+* Picturefill.js Support
 * All using the Bootstrap Framework.
 
 Set Up
