@@ -173,15 +173,20 @@ add_filter( 'tiny_mce_before_init', 'themeFunction_mce_before_init' );
 
 
 // Add Typekit Support
-//function theme_typekit() {
-//    wp_enqueue_script( 'theme_typekit', '//use.typekit.net/xxxxxxx.js');
-//}
+/*
+function themeFunction_typekit() {
+	wp_enqueue_script( 
+	  'themeFunction_typekit', 
+	  '//use.typekit.net/xxxxxxx.js'
+	);
+}
+add_action( 'wp_enqueue_scripts', 'themeFunction_typekit' ); // Add Typekit Script Support
 
-//function theme_typekit_inline() {
-/*  if ( wp_script_is( 'theme_typekit', 'done' ) ) { ?>
-  	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<?php }
+function themeFunction_typekit_inline() {
+  if ( wp_script_is( 'themeFunction_typekit', 'done' ) ) { ?>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <?php } 
+}
+add_action( 'wp_head', 'themeFunction_typekit_inline' ); // Add Typekit Support
 */
-//add_action( 'wp_enqueue_scripts', 'themeFunction_typekit' ); // Add Typekit Script Support
-
 ?>
