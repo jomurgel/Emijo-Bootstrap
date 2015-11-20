@@ -7,7 +7,7 @@
 
 /* CUSTOM POST TYPES
  ========================== */
-// function my_custom_post_product() {
+// function themeFunction_post_product() {
 //   $labels = array(
 //     'name'               => _x( 'Products', 'post type general name' ),
 //     'singular_name'      => _x( 'Product', 'post type singular name' ),
@@ -35,13 +35,13 @@
 //   );
 //   register_post_type( 'product', $args ); 
 // }
-// add_action( 'init', 'my_custom_post_product' );
+// add_action( 'init', 'themeFunction_post_product' );
 
 
 
 /* TAXONOMIES
  ========================== */
-// function my_taxonomies_product() {
+// function themeFunction_taxonomies_product() {
 //   $labels = array(
 //     'name'              => _x( 'Product Categories', 'taxonomy general name' ),
 //     'singular_name'     => _x( 'Product Category', 'taxonomy singular name' ),
@@ -61,6 +61,6 @@
 //   );
 //   register_taxonomy( 'product_category', 'product', $args );
 // }
-// add_action( 'init', 'my_taxonomies_product', 0 );
+// add_action( 'init', 'themeFunction_taxonomies_product', 0 );
 
 ?>
