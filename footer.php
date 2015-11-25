@@ -8,7 +8,7 @@
  */
 ?>
 
-	</div><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #page -->
 
 <footer id="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
