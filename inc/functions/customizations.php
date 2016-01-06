@@ -28,16 +28,21 @@ if(is_admin()) {
 
 
 
-// Rename Menu Items
 // function edit_admin_menus() {
 //     global $menu;
 // 
+//    foreach ( $menu as $key => $val ) {
+//        if ( __( 'Posts') == $val[0] ) {
+//            $menu[$key][6] = 'dashicons-editor-paragraph';
+//        }
+//    }
+//     
 //     $menu[5][0] = 'News'; // Change Posts to News
 // }
+//
+//add_action( 'admin_menu', 'edit_admin_menus' ); // Change menu item names (posts to news)
 
 
-
-// add_action( 'admin_menu', 'edit_admin_menus' ); // Change menu item names (posts to news)
 // Move ACF Options menu under Settings
 //if( function_exists('acf_add_options_sub_page') )
 //{
