@@ -3,8 +3,9 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps');
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    livereload = require('gulp-livereload');
-    replace = require('gulp-replace');
+    minify = require('gulp-minify'),    
+    livereload = require('gulp-livereload'),
+    replace = require('gulp-replace'),
     prompt = require('gulp-prompt')
     
 gulp.task('styles', function(){
@@ -33,6 +34,18 @@ gulp.task('editor-style', function(){
 		.pipe(livereload());
 });
 
+gulp.task('minify-js', function() {
+  gulp.src('js/*.js')
+    .pipe(minify({
+        ext:{
+            src:'.min.js',
+            min:'.min.js'
+        },
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('js/min'))
+});
+
 gulp.task('default',['styles','editor-style']);
 
 gulp.task('watch', function() {
@@ -43,6 +56,7 @@ gulp.task('watch', function() {
 	gulp.watch('scss/*.scss', ['styles']);
 	gulp.watch('scss/**/*.scss', ['styles']);
 	gulp.watch('scss/editor/*.scss', ['editor-style']);
+    gulp.watch('js/*.js', ['minify-js']);
 });
 
 var theme = [];

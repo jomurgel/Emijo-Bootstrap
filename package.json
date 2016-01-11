@@ -8,13 +8,14 @@
     "gulp-sass": "*",
     "gulp-autoprefixer": "*",
     "gulp-minify-css": "*",
+    "gulp-minify": "*",
     "gulp-sourcemaps": "*",
     "gulp-livereload": "*",
     "gulp-replace": "*",
     "gulp-prompt" : "*",
     "gulp-confirm": "*",
-    "bootstrap-sass": "*",
-    "normalize-sass": "*"
+    "normalize-sass": "*",
+    "susy": "*"
   },
   "license": "MIT"
 }
