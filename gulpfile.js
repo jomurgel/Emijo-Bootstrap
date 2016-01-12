@@ -3,10 +3,11 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps');
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    minify = require('gulp-minify'),    
+    uglify = require('gulp-uglify'),    
     livereload = require('gulp-livereload'),
     replace = require('gulp-replace'),
-    prompt = require('gulp-prompt')
+    prompt = require('gulp-prompt'),
+    rename = require('gulp-rename');
     
 gulp.task('styles', function(){
 	gulp.src('scss/*.scss')
@@ -36,14 +37,9 @@ gulp.task('editor-style', function(){
 
 gulp.task('minify-js', function() {
   gulp.src('js/*.js')
-    .pipe(minify({
-        ext:{
-            src:'.min.js',
-            min:'.min.js'
-        },
-        ignoreFiles: ['.combo.js', '-min.js']
-    }))
-    .pipe(gulp.dest('js/min'))
+    .pipe(uglify())
+    .pipe(rename({ extname: '.min.js' }))
+    .pipe(gulp.dest('js/min'));
 });
 
 gulp.task('default',['styles','editor-style','minify-js']);
