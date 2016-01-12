@@ -46,7 +46,7 @@ gulp.task('minify-js', function() {
     .pipe(gulp.dest('js/min'))
 });
 
-gulp.task('default',['styles','editor-style']);
+gulp.task('default',['styles','editor-style','minify-js']);
 
 gulp.task('watch', function() {
 	
