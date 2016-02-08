@@ -16,7 +16,7 @@
     "gulp-prompt" : "*",
     "gulp-confirm": "*",
     "normalize-sass": "*",
-    "susy": "*"
+    "bootstrap-sass": "*"
   },
   "license": "MIT"
 }
