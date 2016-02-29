@@ -44,12 +44,12 @@ if (function_exists('have_posts') && have_posts())
 			// work out
 				if(! preg_match('%^http://%', $link))
 				{
-					$host	= $_SERVER['HTTP_HOST'];
+					$link	= trim(strip_tags($contents));
+				} else {
+                    $host	= $_SERVER['HTTP_HOST'];
 					$dir	= dirname($_SERVER['PHP_SELF']);
 					$link	= "http://$host$dir/$link";
-				} else {
-					$link	= trim(strip_tags($contents));
-				}
+                }
 
 		// navigate to the link
 			header("HTTP/1.1 301 Moved Permanently");
