@@ -12,7 +12,7 @@
     "gulp-replace": "*",
     "gulp-sourcemaps": "*",
     "gulp-livereload": "*",
-    "gulp-replace": "*",
+    "gulp-rename": "*",
     "gulp-prompt" : "*",
     "gulp-confirm": "*",
     "normalize-sass": "*",
