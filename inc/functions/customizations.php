@@ -5,6 +5,15 @@ if(is_admin()) {
 }
 
 
+// add svg support
+function themeFunction_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'themeFunction_mime_types');
+
+
+
 
 // Remove Emojis
 // remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
