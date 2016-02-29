@@ -13,6 +13,19 @@ function themeFunction_mime_types($mimes) {
 add_filter('upload_mimes', 'themeFunction_mime_types');
 
 
+// Defer Javascript Loading
+if ( ! is_admin() ) {
+    // Adapted from https://gist.github.com/toscho/1584783
+    add_filter( 'clean_url', function( $url )
+    {
+        if ( FALSE === strpos( $url, '.js' ) )
+        { // not our file
+            return $url;
+        }
+        // Must be a ', not "!
+        return "$url' defer='defer";
+    }, 11, 1 );
+}
 
 
 // Remove Emojis
