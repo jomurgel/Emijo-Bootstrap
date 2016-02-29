@@ -3,6 +3,8 @@ Emijo-Bootstrap Starter Theme
 
 This is a clean WordPress starter theme based on the Emi starter theme.  A solid starting point when thinking about structure, SEO and other functionality.
 
+Also built with Susy, which can be found [Here](https://github.com/jomurgel/Emijo).
+
 Features
 ------------
 * @media queries via [Breakpoint](http://breakpoint-sass.com/) - Right in your _mixins.scss file. 
@@ -16,6 +18,7 @@ Features
 * Favicons.
 * Picturefill.js Support
 * All using the Bootstrap Framework.
+* SVG support
 
 Set Up
 ------------
@@ -48,3 +51,23 @@ This theme uses [Gulp](http://gulpjs.com/) to automate the following tasks:
 * [LiveReload](http://livereload.com/) `$ npm gulp watch`
 * Gulp Sourcemaps
 * Separate Tiny MCDE Stylesheet
+
+Changelog
+------------
+3.1 Added SVG support, defer javascript function, jpeg compression quality control (all in customization.php).
+
+3.0 MAJOR UPDATE.  Updated for Susy.  General cleanup and organization.  
+
+2.3 A great feature (gulp-replace) added by [lachieh](https://github.com/lachieh) for replacing strings such as ThemeName, etc. using gulp-generate. Thanks!
+
+2.2.1 Gulpfile.js adds gulp-sourcemaps, updated package.json license.
+
+2.2 Updated screenshot.png and added Apple Icon, Favicon and Windows Icon Support
+
+2.1 Added pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
+
+2.0 Added Schema, Google Fonts/Typekit support 
+
+1.1 General cleanup and tidying  
+
+1.0 Initial public release
