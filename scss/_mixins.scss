@@ -50,33 +50,23 @@
 ================================================== */
 
 @mixin breakpoint($point) {
-    @if $point==bp-huge {
-        @media (min-width: $bp-huge) {
+    @if $point==cap {
+        @media (min-width: $cap) {
             @content;
         } // max width
     }
-    @else if $point==bp-wide {
-        @media (max-width: $bp-wide) {
+    @else if $point==l {
+        @media (max-width: $l) {
             @content;
         } // landscape
     }
-    @else if $point==bp-medium {
-        @media (max-width: $bp-medium) {
+    @else if $point==m {
+        @media (max-width: $m) {
             @content;
         } // portrait
     }
-    @else if $point==bp-small {
-        @media (max-width: $bp-small) {
-            @content;
-        } // mobile
-    }
-    @else if $point==bp-xsmall {
-        @media (max-width: $bp-xsmall) {
-            @content;
-        } // mobile
-    }
-    @else if $point==bp-horiz {
-        @media (max-height: $bp-horiz) {
+    @else if $point==s{
+        @media (max-width: $s) {
             @content;
         } // mobile
     }
