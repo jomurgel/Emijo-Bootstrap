@@ -30,7 +30,7 @@
 
     <!-- all other scripts are enqueued via functions.php -->
     <!--[if lt IE 9]>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/html5shiv.js" type="text/javascript"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
 
     <?php // Lets other plugins and files tie into our theme's <head>:
