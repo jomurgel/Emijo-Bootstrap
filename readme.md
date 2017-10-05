@@ -1,6 +1,8 @@
 Emijo-Bootstrap Starter Theme 
 =================
 
+**NOTE This repo is no longer actively developed. Feel free to fork and make something new!**
+
 This is a clean WordPress starter theme based on the Emi starter theme.  A solid starting point when thinking about structure, SEO and other functionality.
 
 Also built with Susy, which can be found [Here](https://github.com/jomurgel/Emijo).
